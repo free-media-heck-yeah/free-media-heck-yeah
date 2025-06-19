@@ -1,0 +1,20 @@
+backend:
+  name: github
+  repo: free-media-heck-yeah/free-media-heck-yeah
+  branch: main
+  base_url: https://decapcms-oauth.netlify.app
+  auth_endpoint: oauth/authorize
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Homepage"
+        name: "homepage"
+        file: "index.html"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Main Content", name: "body", widget: "markdown" }
