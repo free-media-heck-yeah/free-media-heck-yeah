@@ -1,0 +1,21 @@
+{
+  "name": "free-media-heck-yeah",
+  "version": "1.0.0",
+  "scripts": {
+    "dev:site": "vitepress dev docs",
+    "dev:cms": "TINA_PUBLIC_IS_LOCAL=true tinacms dev",
+    "dev": "concurrently \"pnpm run dev:cms\" \"pnpm run dev:site\"",
+    "build:site": "vitepress build docs",
+    "build:cms": "tinacms build"
+  },
+  "devDependencies": {
+    "@tinacms/cli": "^1.0.0",
+    "@tinacms/git-client": "^0.43.0",
+    "concurrently": "^8.0.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tinacms": "^1.0.0",
+    "vitepress": "^1.6.3",
+    "vue": "^3.3.4"
+  }
+}
