@@ -2,7 +2,9 @@
   "name": "free-media-heck-yeah",
   "version": "1.0.0",
   "scripts": {
+    "build": "vitepress build docs",
     "dev:site": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
     "dev:cms": "TINA_PUBLIC_IS_LOCAL=true tinacms dev",
     "dev": "concurrently \"pnpm run dev:cms\" \"pnpm run dev:site\"",
     "build:site": "vitepress build docs",
